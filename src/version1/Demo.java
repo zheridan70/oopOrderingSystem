@@ -10,9 +10,11 @@ package version1;
  */
 public class Demo {
     public static void main(String[] args) {
+        //Create the Catalogue static class
+        
         ShoppingCart cart = new ShoppingCart();
-        Product toothbrush = new Product("Electric Toothbrush", 3550);
-        Product babyAlarm = new Product("Baby Alarm", 4999);
+        Product toothbrush = Catalogue.getProduct("Electric Toothbrush");
+        Product babyAlarm = Catalogue.getProduct("Baby Alarm");
         
         cart.addProduct(toothbrush);
         cart.addProduct(babyAlarm);
