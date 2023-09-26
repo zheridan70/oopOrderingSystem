@@ -15,6 +15,7 @@ public class Demo {
         Product toothbrush = new Product("Electric Toothbrush", 3550);
         Product babyAlarm = new Product("Baby Alarm", 4999);
         //version 1 uploaded to github
+        //new comment
         cart.addProduct(toothbrush);
         cart.addProduct(babyAlarm);
         
