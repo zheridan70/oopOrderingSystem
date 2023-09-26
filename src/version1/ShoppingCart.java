@@ -15,7 +15,7 @@ public class ShoppingCart {
 
     //weve choosen arraylist to hold the collection of Products
     private List<Product> products = new ArrayList<>();
-
+    
     public void addProduct(Product product) {
         products.add(product);
     }

@@ -12,6 +12,7 @@ public class Product {
 
     private final String name; //this is set as final bec. in our simple use case, name is the identifier - cannot change
     private int price; //while price is susceptible to changes
+    
 
     public Product(String name, int price) {
         this.name = name;
@@ -26,5 +27,8 @@ public class Product {
     public String toString() {
         return "Product{" + "name=" + name + ", price=" + price + '}';
     }
+   
+
+    
 
 }

@@ -9,6 +9,7 @@ package version1;
  * @author acezh
  */
 public class Demo {
+    
     public static void main(String[] args) {
         ShoppingCart cart = new ShoppingCart();
         Product toothbrush = new Product("Electric Toothbrush", 3550);
@@ -19,6 +20,14 @@ public class Demo {
         
         System.out.println(cart);
         System.out.println(cart.getTotalCost());
+        
+        
+
+            
+
+            
+            
+
         
     }
 }
