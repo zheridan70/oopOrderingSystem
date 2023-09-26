@@ -14,7 +14,7 @@ public class Demo {
         ShoppingCart cart = new ShoppingCart();
         Product toothbrush = new Product("Electric Toothbrush", 3550);
         Product babyAlarm = new Product("Baby Alarm", 4999);
-        
+        //
         cart.addProduct(toothbrush);
         cart.addProduct(babyAlarm);
         
