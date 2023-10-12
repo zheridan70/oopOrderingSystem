@@ -13,22 +13,33 @@ import java.util.List;
  */
 public class ShoppingCart {
 
+    //4th change this to LineItems
     //weve choosen arraylist to hold the collection of Products
-    private List<Product> products = new ArrayList<>();
+    private List<LineItem> lineItems = new ArrayList<>(); //this will be error, due to LineItem class not yet created //create the class
 
-    public void addProduct(Product product) {
-        products.add(product);
+    public void addLineItem(LineItem lineItem) {
+        lineItems.add(lineItem);
     }
 
+    //change this to add lineItems instead
+//    public int getTotalCost() {
+//        return products.stream()
+//                .mapToInt(Product::getPrice)
+//                .sum();
+//    }
+    
     public int getTotalCost() {
-        return products.stream()
-                .mapToInt(Product::getPrice)
+        return lineItems.stream()
+                .mapToInt(LineItem::getPrice)//this will be error due to getPrice not yet created in LIneItems
                 .sum();
+        //goto 5th LineItems
     }
 
     @Override
     public String toString() {
-        return "ShoppingCart{" + "products=" + products + '}';
+        return "ShoppingCart{" + "lineItems=" + lineItems + '}';
     }
+
+    
 
 }

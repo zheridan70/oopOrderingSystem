@@ -4,6 +4,8 @@
  */
 package version1;
 
+import java.util.Optional;
+
 /**
  *
  * @author acezh
@@ -16,11 +18,17 @@ public class Demo {
         Product toothbrush = Catalogue.getProduct("Electric Toothbrush");
         Product babyAlarm = Catalogue.getProduct("Baby Alarm");
         
-        cart.addProduct(toothbrush);
-        cart.addProduct(babyAlarm);
+        cart.addLineItem(new LineItem(toothbrush, 1));//chagne this to LIneitem
+        cart.addLineItem(new LineItem(babyAlarm, 1));
         
         System.out.println(cart);
         System.out.println(cart.getTotalCost());
+        //run and check\
         
+        //create customer
+        Customer john = new Customer("Jhon", 123456789L);
+        Optional<Order> order = john.checkout(cart);
+        System.out.println(order);
+        //run / check
     }
 }
