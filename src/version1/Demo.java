@@ -30,5 +30,13 @@ public class Demo {
         Optional<Order> order = john.checkout(cart);
         System.out.println(order);
         //run / check
+        
+        //version4 start demo here
+        //encapsulation is to isolate changes to a signle component
+        //think of possible way on how the system might change
+        //example is the appearance of new product type
+        //goto v4_2nd Product Linetiems
+        //changes to the way how price are calculated
+        
     }
 }

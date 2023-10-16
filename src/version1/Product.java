@@ -10,21 +10,30 @@ package version1;
  */
 public class Product {
 
-    private final String name; //this is set as final bec. in our simple use case, name is the identifier - cannot change
-    private int price; //while price is susceptible to changes
+    private final String name; //
+    private int price; // change this to below
+    //int price;
+    private ProductType type; //add this
+    private int discount; // add this
+    private int weight; // add this
 
-    public Product(String name, int price) {
+    public Product(String name, int price, ProductType type, int weight) { //chagne this
         this.name = name;
         this.price = price;
+        this.type = type;
+        this.weight = weight;
     }
 
     public int getPrice() {
-        return price;
+        return price; //remove this for demo .. goto LIne ITEM
     }
 
     @Override
     public String toString() {
-        return "Product{" + "name=" + name + ", price=" + price + '}';
+        return "Product{" + "name=" + name + ", price=" + price + ", ProductType=" + type + ", Weight=" + weight + '}'; //change this
     }
 
+    //supposed by mistake we disgned the Product without a getter method for Price. and get the Price directly. go to change price
+    //
+    
 }
